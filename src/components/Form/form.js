@@ -43,10 +43,7 @@ const Form = () => {
                 Input integers from -1,000 to 1,000.
             </Typography>
             <Box component="form">
-                <TextField id="outlined-basic" variant="outlined" onChange={handleTextInputChange} value={textInput} />
-                <Typography variant="h6" gutterBottom>
-                    Input {textInput}
-                </Typography>
+                <TextField fullWidth variant="outlined" margin="dense" onChange={handleTextInputChange} value={textInput} />
                 {textInput &&
                     <Typography variant="h6" gutterBottom>
                         Sorted and Valid values : {sortedValue.length ? sortedValue.join('   ') : 'no valid values'}
